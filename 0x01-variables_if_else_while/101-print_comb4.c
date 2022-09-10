@@ -14,18 +14,23 @@
  */
 int main(void)
 {
-int n;
 int m;
-for (n = 48; n < 57; n++)
+int n;
+int o;
+for (m = 48; m < 56; m++)
 {
-for (m = n + 1; m < 58; m++)
+for (n = m + 1; n < 57; n++)
 {
-putchar(n);
+for (o = n + 1; o < 58; o++)
+{
 putchar(m);
-if (n != 56 || m != 57)
+putchar(n);
+putchar(o);
+if (m != 55 || n != 56 || o != 57)
 {
 putchar(',');
 putchar(' ');
+}
 }
 }
 }
