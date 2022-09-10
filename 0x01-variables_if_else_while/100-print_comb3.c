@@ -23,7 +23,7 @@ for (m = 49; m <= 57; m++)
 {
 putchar(',');
 putchar(' ');
-if (n != 56 || m != )
+if (n != 56 || m != 57)
 {
 putchar(',');
 putchar(' ');
