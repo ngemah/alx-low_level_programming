@@ -22,8 +22,8 @@ for (mfirst = 48; mfirst < 58; mfirst++)
 {
 for (m = 48; m < 58; m++)
 {
-n = m + 1
-nfirst = mfirst
+n = m + 1;
+nfirst = mfirst;
 for (; nfirst < 58; nfirst++)
 {
 for (; n < 58; n++)
