@@ -8,14 +8,10 @@
 #include <stdio.h>
 
 /**
-
- * main - A simple program that outputs a line of text using puts()
-
- *
-
- * Return: 0 upon completion
-
- */
+* main - A simple program that outputs a line of text using puts()
+* Description: using the main function
+* Return: 0
+*/
 
 int main(void)
 {
