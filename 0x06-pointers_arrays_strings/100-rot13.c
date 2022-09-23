@@ -1,31 +1,18 @@
 #include "main.h"
 /**
- * print_number - prints # using _putchar function
- * @n: the integer to print
+ * rot13 - translates string to ROT13
+ * @s: input string to be translated
  *
- * Return: void
+ * Return: string after conversion of ROT13
  */
-void print_number(int n)
+char *rot13(char *s)
 {
-int copy, nth, size = 1, ones = n % 10;
-n /= 10;
-copy = n;
-if (ones < 0)
-{
-ones *= -1, copy *= -1, n *= -1;
-_putchar('-');
-}
-if (copy > 0)
-{
-while (copy / 10 != 0)
-copy /= 10, size *= 10;
-while (size > 0)
-{
-nth = n / size;
-_putchar('0' + nth);
-n -= nth * size;
-size /= 10;
-}
-}
-_putchar('0' + ones);
+int i, j;
+char alphabet[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+char rot_it[] =   "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
+for (i = 0; s[i] != '\0'; i++)
+for (j = 0; j < 52; j++)
+if (s[i] == alphabet[j])
+s[i] = rot_it[j], j = 52;
+return (s);
 }
