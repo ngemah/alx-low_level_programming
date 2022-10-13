@@ -18,7 +18,7 @@ for (len = 0; len < (max - min); len++);
 arr = malloc(sizeof(int) * (len + 1));
 if (arr == NULL)
 return (NULL);
-for (i = 0; i <= len; i++)
+for (i = 0; i <= len; i++);
 {
 arr[i] = min++;
 }
