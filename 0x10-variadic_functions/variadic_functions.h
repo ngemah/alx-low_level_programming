@@ -1,15 +1,16 @@
 #ifndef VARIADIC_FUNCTIONS.H
 #define VARIADIC_FUNCTIONS.H
 #include <stdarg.h>
+#include <stdio.h>
 
 /**
 
-*File: main.h
+*File: variadic_functions.h
 *Auth: Richard Cudjoe
 
 *Desc: Header file containing prototypes for all functions
 
-* Used for static libraries, how they work, how to create one, and how to use them
+* Used for Variadic functions
 */
 
 int sum_them_all(const unsigned int n, ...);
@@ -32,4 +33,4 @@ void (*f)(va_list);
 char spec;
 } funckey;
 
-#endif /*VARIADIC_FUNCTIONS.H*/
+#endif
