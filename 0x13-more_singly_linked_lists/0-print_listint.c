@@ -1,5 +1,4 @@
 #include "lists.h"
-#include <stdio.h>
 
 /**
  * print_listint - print the int value in each element of a list.
@@ -9,14 +8,13 @@
  */
 size_t print_listint(const listint_t *h)
 {
-size_t n_nodes = 0;
-if (!h)
-return (0);
-while (h)
+const listint_t *cursor = h;
+size_t count = 0;
+while (cursor != NULL)
 {
-printf("%d\n", h->n);
-h = h->next;
-n_nodes++;
+printf("%d", cursor->n);
+count += 1;
+cursor = cursor ->next;
 }
-return (n_nodes);
+return (count);
 }
